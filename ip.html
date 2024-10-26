@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/logo.png" />
+    <link rel="stylesheet" href="student.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h2>Edu<span class="danger">Track</span></h2>
+      </div>
+      <div class="navbar">
+        <a href="student.html">
+          <span class="material-icons-sharp">home</span>
+          <h3>Home</h3>
+        </a>
+        <a href="timetable.html">
+          <span class="material-icons-sharp">today</span>
+          <h3>Time Table</h3>
+        </a>
+        <a href="exam.html">
+          <span class="material-icons-sharp">grid_view</span>
+          <h3>Examination</h3>
+        </a>
+        <a href="video.html" class="active" onclick="examTableAll()">
+          <i class="fa-solid fa-video"></i>
+          <h3>Video Lectures</h3>
+        </a>
+        <a href="home.html">
+          <span class="material-icons-sharp">logout</span>
+          <h3>Logout</h3>
+        </a>
+      </div>
+      <div id="profile-btn" style="display: none">
+        <span class="material-icons-sharp">person</span>
+      </div>
+      <div class="theme-toggler">
+        <span class="material-icons-sharp active">light_mode</span>
+        <span class="material-icons-sharp">dark_mode</span>
+      </div>
+    </header>
+
+    <main>
+      <h1>SUBJECTS</h1>
+      <div class="subjects" style="margin-top: 200px; padding: 50px">
+        <div class="eg">
+          <span class="material-icons-sharp">architecture</span>
+          <a
+            href="https://youtu.be/hRaDYCHqFQQ?si=Qb5SOopqbmcaXQ41"
+            target="_blank"
+            ><h3>What is DOM</h3></a
+          >
+        </div>
+        <div class="mth">
+          <span class="material-icons-sharp">functions</span>
+          <a
+            href="https://youtu.be/VlPiVmYuoqw?si=O0BwtllyMY8_CKcC"
+            target="_blank"
+            ><h3>Javascript One shot</h3></a
+          >
+        </div>
+        <div class="cs">
+          <span class="material-icons-sharp">computer</span>
+          <a
+            href="https://youtube.com/playlist?list=PLinedj3B30sDby4Al-i13hQJGQoRQDfPo&si=0mvFADcqTF9g6s3P"
+            target="_blank"
+          >
+            <h3>NodeJs Playlist</h3></a
+          >
+        </div>
+        <div class="cg">
+          <span class="material-icons-sharp">dns</span>
+          <a
+            href="https://youtu.be/gY5sGvq-8h8?si=mLPqLDQthNnN9KXb"
+            target="_blank"
+            ><h3>React OneShot</h3></a
+          >
+        </div>
+        <div class="net">
+          <span class="material-icons-sharp">router</span>
+          <a
+            href="https://youtu.be/7H_QH9nipNs?si=cezPVbJjbiThomgC"
+            target="_blank"
+            ><h3>Express Oneshot</h3></a
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
